@@ -1,0 +1,19 @@
+---
+firewall_rules:
+  https:
+    - name:   '004 allow https'
+      chain:  'INPUT'
+      proto:  'tcp'
+      dport:  '443'
+      action: 'accept'
+
+web_sites:
+  env-box-01:
+    - server_name: env-box-01
+      key_pair:    
+      locations: [
+                  "  location / {",
+                  "    proxy_pass https://env-box-02;",
+                  "  }",
+                  ""
+      ]
