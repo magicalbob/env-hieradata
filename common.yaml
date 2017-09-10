@@ -41,7 +41,7 @@ users:
     home:       /home/user_b
     shell:      /bin/bash
     uid:        10001
-    gid:        10002
+    gid:        10001
     groups:
                 wheel
 
