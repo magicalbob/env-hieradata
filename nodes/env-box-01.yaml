@@ -10,7 +10,7 @@ firewall_rules:
 web_sites:
   env-box-01:
     - server_name: env-box-01
-      key_pair:    
+      key_pair: akeypair
       locations: [
                   "  location / {",
                   "    proxy_pass https://env-box-02;",

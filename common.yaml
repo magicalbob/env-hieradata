@@ -25,6 +25,13 @@ boxes:
      cpus: 2
      mem:  4096
 
+key_pairs:
+  akeypair:
+    key_file: /etc/ssl/certs/akey.key
+    key: somekeydata
+    crt_file: /etc/ssl/certs/acert.crt
+    crt: somecertdata
+
 users:
   user_a:
     ensure:     present
